@@ -1,0 +1,17 @@
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+    <div class="profile_container">
+        <div class="profile_menu">
+  
+            <div class="functionality">
+                <button class="btn" (click)="goToExampleBySexAndAge()">Пример визуализации по полу и возрасту</button>
+                <button class="btn" (click)="goToExampleByPlatforms()">Пример визуализации по используемым платформам</button>
+            </div>
+        </div>
+  
+        <div class="clear-fix">
+            <div class="container">
+                <router-outlet></router-outlet>
+            </div>
+        </div>
+    </div>
+  </body>

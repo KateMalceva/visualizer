@@ -1,0 +1,108 @@
+body {
+    line-height: 1.7;
+    font-weight: 400;
+    font-size: 1rem;
+    font-family: "Comfortaa"}
+    body:before {
+      position: absolute;
+      content: "";
+      left: 0;
+      right: 0;
+      bottom: 0;
+      top: 0;
+      background: rgba(0, 0, 0, 0.3);
+      -webkit-transition: .3s all ease;
+      -o-transition: .3s all ease;
+      transition: .3s all ease;
+      opacity: 0;
+      visibility: hidden;
+      z-index: 399; }
+    body.offcanvas-menu {
+      position: relative; }
+      body.offcanvas-menu:before {
+        opacity: 1;
+        visibility: visible; }
+  
+  .profile_container {
+    width: 86%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 2;
+  
+  }
+  
+  .profile_menu {
+    width: 20%;
+    box-sizing: border-box;
+    //position: absolute;
+    position: relative;
+    float: left;
+    margin-bottom: 3rem!important;
+    display: inline-block;
+    flex-wrap: wrap;
+  
+  }
+  
+  .functionality {
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+  
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .container{
+    width: 75%;
+    box-sizing: border-box;
+    position:relative;
+    margin-left: 5%;
+    float: left;
+    //padding-left: 25%;
+    margin-bottom: 3rem!important;
+    display: inline-block;
+    flex-wrap: wrap;
+  }
+  
+  .clear-fix:before, .clear-fix:after {
+    content: " ";
+    display: table;
+    }
+    .clear-fix:after {
+    clear: both;
+    }
+  
+  .btn {
+    outline: 1px solid #939393;
+    padding: 8px 20px;
+    color: #939393;
+    background-color: white;
+    width: 100%;
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    border: 1px solid transparent;
+    font-size: 1rem;
+    line-height: 1.5;
+    transition: .3s all ease;
+    text-decoration: none;
+    cursor: pointer;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-family: "Comfortaa"
+  }
+  
+  .btn:hover {
+    color: white;
+    background-color: #9155A7;
+  }
+  
+  p {
+    text-align: center;
+  }

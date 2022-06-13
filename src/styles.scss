@@ -1,1 +1,351 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+    margin: 0;
+    padding: 0;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: "Comfortaa"}
+body {
+    line-height: 1.7;
+    font-weight: 400;
+    font-size: 1rem;}
+    body:before {
+      position: absolute;
+      content: "";
+      left: 0;
+      right: 0;
+      bottom: 0;
+      top: 0;
+      background: rgba(0, 0, 0, 0.3);
+      -webkit-transition: .3s all ease;
+      -o-transition: .3s all ease;
+      transition: .3s all ease;
+      opacity: 0;
+      visibility: hidden;
+      z-index: 399; }
+    body.offcanvas-menu {
+      position: relative; }
+      body.offcanvas-menu:before {
+        opacity: 1;
+        visibility: visible; }
+
+.top-bar {
+    padding: .5rem 0;
+    border-bottom: 1px solid #e9ecef !important;
+    background: #9155A7;
+    box-sizing: border-box;
+    display: block;
+}
+
+.container_1 {
+    width: 86%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 2;
+}
+
+.container_2 {
+    width: 86%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 2;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+.col {
+    -webkit-box-flex: 0;
+    flex: 0 0 100%;
+    max-width: 100%;
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    box-sizing: border-box;
+    text-align: left;
+    display: inline-block;
+}
+
+.text-white {
+    color: #fff!important;
+}
+
+a {
+    transition: .3s all ease;
+    text-decoration: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.mr {
+    margin-right: 0.5rem!important;
+}
+
+.icon {
+    width: 15px;
+    height: 15px;
+}
+
+.float-right {
+    float: right!important;
+}
+
+.dividing-block {
+    margin-left: 0.5rem!important;
+    margin-right: 0.5rem!important;
+    display: inline-block!important;
+}
+
+.logo {
+    //margin-top: 9px;
+    width: 18%;
+    height: 18%;
+    float: left;
+}
+
+.page_images {
+    //margin-top: 9px;
+    width: 40%;
+    height: 40%;
+    display:block;
+    margin:auto;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+
+.site-navigation {
+    text-align: right!important;
+    margin-left: auto!important;
+}
+
+nav {
+    display: block;
+}
+
+ul {
+    text-align: left;
+    display: inline;
+    margin: 0;
+    padding: 15px 4px 17px 0;
+    list-style: none;
+}
+
+ul li {
+    display: inline-block;
+    margin-right: -4px;
+    position: relative;
+    padding: 15px 5px;
+    background: #fff;
+    cursor: pointer;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+.nav-link {
+    display: block;
+    padding: 0.5rem 0.5rem;
+}
+
+a {
+    color: black;
+}
+
+a:hover {
+    color: #9155A7;
+}
+
+.site-footer {
+    padding: 1.2em 0;
+    background: #9155A7;
+    display: block;
+}
+
+.row_3 {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.col_footer {
+    -webkit-box-flex: 0;
+    flex: 0 0 33.33333%;
+    max-width: 30%;
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    display: inline-block;
+}
+
+.footer-heading_h2 {
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 1.5rem!important;
+    font-family: "Raleway", sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-top: 0;
+}
+
+.site-section_bg-light {
+    padding: 2.5rem 0;
+    background-color: #ffffff!important;
+    display: block;
+}
+
+.row_align_center_bg-light {
+    text-align: center!important;
+    margin-bottom: 2rem!important;
+    -webkit-box-pack: center!important;
+    justify-content: center!important;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.col_align_center {
+    -webkit-box-flex: 0;
+    flex: 0 0 58.33333%;
+    max-width: 58.33333%;
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.block-heading h2 {
+    font-size: 1.5rem;
+    color: #0DB26B; 
+    //font-family: "Raleway", sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+    font-weight: 150;
+    line-height: 1.2;
+    margin-top: 0;
+}
+
+.row_bg-light {
+    margin-bottom: 3rem!important;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.row_parts_bg-ligth {
+    margin-bottom: 0!important;
+    -webkit-box-flex: 0;
+    flex: 0 0 50%;
+    max-width: 47%;
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.advantages {
+    background: #fff;
+    padding: 30px;
+}
+
+.advantages_text_green {
+    color: #0DB26B !important;
+    text-align: center!important;
+    //font-family: "Raleway", sans-serif;
+    text-transform: uppercase;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-top: 0;
+}
+
+.p_advantages {
+    margin-bottom: 3rem!important;
+    margin-top: 0;
+    color: #939393;
+}
+
+.btn {
+    padding: 8px 20px;
+    color: #fff;
+    background-color: #6c757d;
+    border-color: #6c757d;
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    border: 1px solid transparent;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    
+    transition: .3s all ease;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    color: #b8b8b8;
+}
+
+.row_btn {
+    padding: 8px 20px;
+    color: #fff;
+    background-color: #6c757d;
+    border-color: #6c757d;
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: center;
+    user-select: none;
+    border: 1px solid transparent;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+}
+
+.p_row_part {
+    font-size: 18px;
+    color: #fff;
+    text-align: center!important;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+

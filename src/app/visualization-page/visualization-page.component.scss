@@ -1,0 +1,27 @@
+.row_btn_v {
+    padding: 8px 20px;
+    //color: #fff;
+    background-color: #ffffff;
+    //border-color: #6c757d;
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: center;
+    user-select: none;
+    //border: 1px solid transparent;
+    font-size: 1.9rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    border: 1px solid #6c757d;
+}
+
+.row_parts_bg-ligth_v {
+    margin-bottom: 0!important;
+    -webkit-box-flex: 0;
+    flex: 0 0 33%;
+    max-width: 30%;
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
